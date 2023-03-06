@@ -26,6 +26,7 @@
 
 .post {
   margin: 2px 0;
+  padding-right: 6px;
   text-align: justify;
   font-size: 0.8rem;
 }
@@ -43,7 +44,7 @@
 }
 
 .MessageItem__icons img:hover {
-  background-color: #01b9f5;
+  background-color: #ffbd90;
   border-radius: 100%;
   cursor: pointer;
 }
