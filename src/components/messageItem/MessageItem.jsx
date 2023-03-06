@@ -12,18 +12,18 @@ const MessageItem = ({ messageData }) => {
         <div className="MessageItem__icons">
           <img
             className="comment"
-            src="https://img.icons8.com/fluency-systems-regular/48/null/comments--v2.png"
+            src="https://img.icons8.com/fluency-systems-regular/9ca7ab/null/comments--v2.png"
             alt="comment"
           />
           <img
             className="repost"
-            src="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/512/external-repost-arrows-inkubators-detailed-outline-inkubators.png"
+            src="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/9ca7ab/external-repost-arrows-inkubators-detailed-outline-inkubators.png"
             alt="repost"
           />
           <div className="MessageItem__like">
             <img
               className="like"
-              src="https://img.icons8.com/material-outlined/512/filled-like.png"
+              src="https://img.icons8.com/material-outlined/9ca7ab/filled-like.png"
               alt="like"
             />
             <span className="num_like">{reactions}</span>
@@ -31,7 +31,7 @@ const MessageItem = ({ messageData }) => {
 
           <img
             className="upload"
-            src="https://img.icons8.com/sf-regular/512/upload.png"
+            src="https://img.icons8.com/sf-regular/9ca7ab/upload.png"
             alt="upload"
           />
         </div>

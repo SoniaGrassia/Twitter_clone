@@ -6,3 +6,28 @@
   position: fixed;
   bottom: 0;
 }
+
+.Footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 25px;
+  list-style-type: none;
+}
+
+.home,
+.search,
+.notification,
+.messages {
+  width: 35px;
+  height: 35px;
+  padding: 1px;
+}
+
+.home:active,
+.search:active,
+.notification:active,
+.messages:active {
+  background-color: #01b8f530;
+  border-radius: 100px;
+}
