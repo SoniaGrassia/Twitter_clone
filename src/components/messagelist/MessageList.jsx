@@ -6,7 +6,7 @@ const MessageList = () => {
   return (
     <div className="MessageList">
       {listMessage.map((data) => (
-        <MessageItem messageData={data} />
+        <MessageItem messageData={data} key={data.id} />
       ))}
     </div>
   );
