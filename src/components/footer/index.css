@@ -1,0 +1,9 @@
+.Footer {
+  border: 1px solid purple;
+  background-color: white;
+
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+}

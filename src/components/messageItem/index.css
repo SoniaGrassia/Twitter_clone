@@ -1,0 +1,58 @@
+.MessageItem {
+  display: flex;
+  padding: 6px;
+  border-bottom: 1px solid lightgray;
+}
+
+.userPhoto {
+  border: 1px solid #01b9f5;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.MessageItem__content {
+  padding: 6px;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.userEmail {
+  color: rgb(142, 142, 142);
+}
+
+.post {
+  margin: 2px 0;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.MessageItem__icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 40px 0 0;
+}
+
+.MessageItem__icons img {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.MessageItem__icons img:hover {
+  background-color: #01b9f5;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.MessageItem__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-size: small;
+  color: rgb(142, 142, 142);
+}
