@@ -19,8 +19,9 @@
 .search,
 .notification,
 .messages {
-  width: 35px;
-  height: 35px;
+  color: #9ca7ab;
+  width: 30px;
+  height: 30px;
   padding: 1px;
 }
 
@@ -30,4 +31,10 @@
 .messages:active {
   background-color: #01b8f530;
   border-radius: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .Footer {
+    display: none;
+  }
 }

@@ -1,4 +1,8 @@
 import "./index.css";
+import { BiMessageDetail } from "react-icons/bi";
+import { BiRepost } from "react-icons/bi";
+import { BiHeart } from "react-icons/bi";
+import { BiUpload } from "react-icons/bi";
 
 const MessageItem = ({ messageData }) => {
   const { photo, name, email, body, reactions } = messageData;
@@ -9,31 +13,16 @@ const MessageItem = ({ messageData }) => {
         <span className="userName">{name}</span>
         <em className="userEmail"> {email}</em>
         <p className="post">{body}</p>
+
         <div className="MessageItem__icons">
-          <img
-            className="comment"
-            src="https://img.icons8.com/fluency-systems-regular/9ca7ab/null/comments--v2.png"
-            alt="comment"
-          />
-          <img
-            className="repost"
-            src="https://img.icons8.com/external-inkubators-detailed-outline-inkubators/9ca7ab/external-repost-arrows-inkubators-detailed-outline-inkubators.png"
-            alt="repost"
-          />
+          <BiMessageDetail className="comment" />
+          <BiRepost className="repost" />
           <div className="MessageItem__like">
-            <img
-              className="like"
-              src="https://img.icons8.com/material-outlined/9ca7ab/filled-like.png"
-              alt="like"
-            />
+            <BiHeart className="like" />
             <span className="num_like">{reactions}</span>
           </div>
 
-          <img
-            className="upload"
-            src="https://img.icons8.com/sf-regular/9ca7ab/upload.png"
-            alt="upload"
-          />
+          <BiUpload className="upload" />
         </div>
       </div>
     </div>

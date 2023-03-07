@@ -1,23 +1,23 @@
 import "./index.css";
+import ModalMenu from "../modalmenu/ModalMenu";
+import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoLogoTwitter } from "react-icons/io";
+import { HiOutlineSparkles } from "react-icons/hi";
 
 const Navbar = () => {
+  const [modalView, setModalView] = useState(false);
+
+  const activateModal = () => {
+    setModalView(!modalView);
+  };
+
   return (
     <div className="Navbar">
-      <div className="hamburger_menu">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
-      <img
-        src="https://img.icons8.com/color/512/twitter.png"
-        alt="logo_twitter"
-        className="logo"
-      />
-      <img
-        src="https://img.icons8.com/ios/01b9f5/sparkling.png"
-        alt="sparkle_logo"
-        className="sparkle_logo"
-      />
+      <RxHamburgerMenu className="hamburger" onClick={activateModal} />
+      <ModalMenu modalView={modalView} />
+      <IoLogoTwitter className="logo" />
+      <HiOutlineSparkles className="sparkle_logo" />
     </div>
   );
 };

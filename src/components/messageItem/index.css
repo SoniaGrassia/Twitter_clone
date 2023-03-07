@@ -37,7 +37,11 @@
   padding: 6px 40px 0 0;
 }
 
-.MessageItem__icons img {
+.comment,
+.repost,
+.like,
+.upload {
+  color: #9ca7ab;
   width: 20px;
   height: 20px;
   padding: 2px;

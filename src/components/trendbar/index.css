@@ -1,0 +1,11 @@
+.Trendbar {
+  border: 1px solid blue;
+  width: 30%;
+  margin-top: 10vh;
+}
+
+@media screen and (man-width: 800px) {
+  .Trendbar {
+    display: none;
+  }
+}

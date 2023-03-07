@@ -1,0 +1,30 @@
+.ButtonTweet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01b9f5;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 206px;
+  right: 20px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px rgb(142, 142, 142);
+}
+
+.ButtonTweet__icon {
+  width: 25px;
+  height: 25px;
+  color: white;
+  transform: rotate(10deg);
+}
+
+.ButtonTweet:active {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 800px) {
+  .ButtonTweet {
+    display: none;
+  }
+}
