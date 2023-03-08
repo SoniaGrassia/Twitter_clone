@@ -1,7 +1,6 @@
 .Trendbar {
-  border: 1px solid blue;
+  border-left: 1px solid lightgray;
   width: 30%;
-  margin-top: 10vh;
 }
 
 @media screen and (man-width: 800px) {

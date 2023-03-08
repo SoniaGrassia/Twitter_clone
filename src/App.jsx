@@ -1,4 +1,4 @@
-import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
 import Content from "./components/content";
 import Footer from "./components/footer";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Sidebar />
       <Content />
       <Trendbar />

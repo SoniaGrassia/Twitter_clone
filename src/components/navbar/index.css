@@ -50,5 +50,11 @@
   }
   .Navbar {
     justify-content: flex-end;
+    width: 44.9%;
+    height: 6vh;
+  }
+  .sparkle_logo {
+    width: 15px;
+    height: 15px;
   }
 }
