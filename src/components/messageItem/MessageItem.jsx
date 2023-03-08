@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./index.css";
 import { BiMessageDetail } from "react-icons/bi";
 import { BiRepost } from "react-icons/bi";
@@ -5,13 +6,23 @@ import { BiHeart } from "react-icons/bi";
 import { BiUpload } from "react-icons/bi";
 
 const MessageItem = ({ messageData }) => {
-  const { photo, name, email, body, reactions } = messageData;
+  const { userId, body, reactions } = messageData;
+
+  const [userData, setUserData] = useState({});
+
+  useEffect(() => {
+    fetch(`https://dummyjson.com/users/${userId}`)
+      .then((res) => res.json())
+      .then((data) => setUserData(data));
+    // console.log(userData);
+  }, []);
+
   return (
     <div className="MessageItem">
-      <img className="userPhoto" src={photo} alt="user" />
+      <img className="userPhoto" src={userData.image} alt={userData.username} />
       <div className="MessageItem__content">
-        <span className="userName">{name}</span>
-        <em className="userEmail"> {email}</em>
+        <span className="userName">{userData.username}</span>
+        <em className="userEmail"> {userData.email}</em>
         <p className="post">{body}</p>
 
         <div className="MessageItem__icons">

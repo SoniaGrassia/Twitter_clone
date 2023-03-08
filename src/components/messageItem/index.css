@@ -47,8 +47,12 @@
   padding: 2px;
 }
 
-.MessageItem__icons img:hover {
+.comment:hover,
+.repost:hover,
+.like:hover,
+.upload:hover {
   background-color: #ffbd90;
+  color: #697173;
   border-radius: 100%;
   cursor: pointer;
 }

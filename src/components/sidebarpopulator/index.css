@@ -1,0 +1,63 @@
+.SidebarPopulator {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  position: fixed;
+}
+
+.Sidebar__logo-twitter {
+  color: #01b9f5;
+  width: 30px;
+  height: 30px;
+  padding-inline-start: 40px;
+  cursor: pointer;
+}
+
+.Sidebar__ul {
+  list-style-type: none;
+  padding-inline-start: 40px;
+}
+
+.Sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Sidebar li:hover {
+  color: #01b9f5;
+}
+
+.Sidebar__explore-icon,
+.Sidebar__notifications-icon,
+.Sidebar__message-icon,
+.Sidebar__bookmark-icon,
+.Sidebar__lists-icon,
+.Sidebar__more-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Sidebar__user-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #01b9f5;
+}
+
+.Sidebar h3 {
+  cursor: pointer;
+}
+
+.Sidebar__btn {
+  align-self: center;
+  width: 80%;
+  padding: 12px 24px;
+  border: 0;
+  background-color: #01b5f1;
+  color: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

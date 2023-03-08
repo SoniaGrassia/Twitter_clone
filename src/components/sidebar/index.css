@@ -1,13 +1,7 @@
 .Sidebar {
   border-right: 1px solid lightgray;
   width: 25%;
-}
-
-.logo-twitter {
-  color: #01b9f5;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+  padding: 15px 0;
 }
 
 @media screen and (max-width: 800px) {

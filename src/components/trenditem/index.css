@@ -1,0 +1,8 @@
+.TrendItem {
+}
+
+.TrendItem img {
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+}
