@@ -1,12 +1,12 @@
+import { useState } from "react";
 import "./index.css";
 import ModalMenu from "../modalmenu/ModalMenu";
 import PostTweet from "../posttweet";
-import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoLogoTwitter } from "react-icons/io";
 import { HiOutlineSparkles } from "react-icons/hi";
 
-const Navbar = () => {
+const Navbar = ({ hidden }) => {
   const [modalView, setModalView] = useState(false);
 
   const activateModal = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
         <IoLogoTwitter className="logo" />
         <HiOutlineSparkles className="sparkle_logo" />
       </div>
-      <div className="Navbar__down">
+      <div className={`Navbar__down ${hidden ? "hidden" : ""}`}>
         <PostTweet />
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import MessageList from "../messagelist";
 import ButtonTweet from "../buttontweet/ButtonTweet";
@@ -7,21 +7,23 @@ import "./index.css";
 const Content = () => {
   // Esercizio 09-03-2023 - useRef
   // Se la lunghezza dello scroll è maggiore
-  // o uguale a 1 il background di Content diventa rosso,
-  // viceversa, diventa bianco
+  // o uguale a 100 il setNavbarHidden modificherà il valore di navbarHidden a true,
+  // viceversa, a false. Questo valore lo passo come props a Navbar per
+  // far visualizzare o meno una porzione di Navbar.
   const contentRef = useRef(null);
+  const [navbarHidden, setNavbarHidden] = useState(false);
 
   return (
     <div
       ref={contentRef}
       className="Content"
       onScroll={() =>
-        contentRef.current.scrollTop >= 1
-          ? (contentRef.current.style.backgroundColor = "red")
-          : (contentRef.current.style.backgroundColor = "white")
+        contentRef.current.scrollTop >= 100
+          ? setNavbarHidden(true)
+          : setNavbarHidden(false)
       }
     >
-      <Navbar />
+      <Navbar hidden={navbarHidden} />
       <MessageList />
       <ButtonTweet />
     </div>

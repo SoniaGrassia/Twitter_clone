@@ -6,6 +6,10 @@
   top: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .Navbar__up {
   display: flex;
   justify-content: space-between;
