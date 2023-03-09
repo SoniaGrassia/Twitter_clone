@@ -1,5 +1,6 @@
 const listTrends = [
   {
+    id: 1,
     category: "#ENTERTAINMENT",
     title:
       "She'd never date me: Musk after Twitter user asks about date with US leader Alexandria",
@@ -8,6 +9,7 @@ const listTrends = [
     tweeting: 20456,
   },
   {
+    id: 2,
     category: "#POLITICS",
     title:
       "Unworthy of response: India on Pak Foreign Minister's Kashmir remarks at UNSC",
@@ -16,6 +18,7 @@ const listTrends = [
     tweeting: 75757,
   },
   {
+    id: 3,
     category: "#POLITICS",
     title:
       "US minister Raimondo dances to 'Aaj Biraj Mein Holi Re' at Rajnath Singh's residence",
@@ -24,6 +27,7 @@ const listTrends = [
     tweeting: 16758,
   },
   {
+    id: 4,
     category: "#POLITICS",
     title: "Australian PM celebrates Holi during 1st India visit; shares pics",
     image:
@@ -31,6 +35,7 @@ const listTrends = [
     tweeting: 1564749,
   },
   {
+    id: 5,
     category: "#NEWS",
     title: "1,000 dogs found dead at man's house in South Korea",
     image:
@@ -38,6 +43,7 @@ const listTrends = [
     tweeting: 1575,
   },
   {
+    id: 6,
     category: "#POLITICS",
     title: "Russia will get open road into Ukraine if Bakhmut falls: Zelenskyy",
     image:
@@ -45,6 +51,7 @@ const listTrends = [
     tweeting: 3039,
   },
   {
+    id: 7,
     category: "#TECHONOLOGY",
     title:
       "Bill Gates shares unseen pics from his India visit, says 'can't wait to go back'",
@@ -53,6 +60,7 @@ const listTrends = [
     tweeting: 20947,
   },
   {
+    id: 8,
     category: "#ENTERTAINMENT",
     title:
       "I regret taking care of them: Govinda's wife Sunita on Krushna & Arti",
@@ -61,6 +69,7 @@ const listTrends = [
     tweeting: 38474,
   },
   {
+    id: 9,
     category: "#SCIENCE",
     title:
       "What is a hybrid solar eclipse that will take place on April 20, 2023?",

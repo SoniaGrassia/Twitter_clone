@@ -1,11 +1,14 @@
 .Content {
   margin-top: 10vh;
   margin-bottom: 10vh;
+  overflow: scroll;
+  height: 100vh;
 }
 
 @media screen and (min-width: 800px) {
   .Content {
     width: 45%;
+    margin-top: 20vh;
     margin-bottom: 0;
   }
 }

@@ -2,11 +2,14 @@ import "./index.css";
 import TrendItem from "../trenditem";
 import listTrends from "../../mock/listTrends";
 
-const TrendList = () => {
+const TrendList = ({ inputValue }) => {
+  const filteredTrends = () =>
+    listTrends.filter((trend) => trend.title.includes(inputValue));
+
   return (
     <div className="TrendList">
-      {listTrends.map((news) => (
-        <TrendItem newsData={news} />
+      {filteredTrends().map((news) => (
+        <TrendItem newsData={news} key={news.id} />
       ))}
     </div>
   );
