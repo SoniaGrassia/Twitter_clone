@@ -2,3 +2,10 @@
   height: 100vh;
   overflow: auto;
 }
+
+.TrendList::-webkit-scrollbar {
+  width: 10px;
+}
+.TrendList::-webkit-scrollbar-track {
+  background-color: transparent;
+}

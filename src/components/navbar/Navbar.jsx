@@ -21,6 +21,8 @@ const Navbar = ({ hidden }) => {
         <IoLogoTwitter className="logo" />
         <HiOutlineSparkles className="sparkle_logo" />
       </div>
+      //TODO:Navbar__down deve diventare un componente per far si che allo
+      scroll scompaia
       <div className={`Navbar__down ${hidden ? "hidden" : ""}`}>
         <PostTweet />
       </div>

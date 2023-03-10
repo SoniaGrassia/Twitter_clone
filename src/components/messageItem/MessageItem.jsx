@@ -5,7 +5,7 @@ import { BiRepost } from "react-icons/bi";
 import { BiHeart } from "react-icons/bi";
 import { BiUpload } from "react-icons/bi";
 
-const MessageItem = ({ messageData }) => {
+const MessageItem = ({ messageData, setIsVisible }) => {
   const { userId, body, reactions } = messageData;
 
   const [userData, setUserData] = useState({});
@@ -14,8 +14,11 @@ const MessageItem = ({ messageData }) => {
     fetch(`https://dummyjson.com/users/${userId}`)
       .then((res) => res.json())
       .then((data) => setUserData(data));
-    // console.log(userData);
   }, []);
+
+  const onHandleClick = () => {
+    setIsVisible(true);
+  };
 
   return (
     <div className="MessageItem">
@@ -26,7 +29,7 @@ const MessageItem = ({ messageData }) => {
         <p className="post">{body}</p>
 
         <div className="MessageItem__icons">
-          <BiMessageDetail className="comment" />
+          <BiMessageDetail className="comment" onClick={onHandleClick} />
           <BiRepost className="repost" />
           <div className="MessageItem__like">
             <BiHeart className="like" />

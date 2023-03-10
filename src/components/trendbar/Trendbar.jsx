@@ -7,19 +7,25 @@ function Trendbar() {
 
   const changeInputValue = (e) => {
     setInputValue(e.target.value);
-    console.log(inputValue);
+  };
+
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+    setInputValue(inputValue);
   };
 
   return (
     <div className="Trendbar">
-      <input
-        className="Trendbar__search"
-        type="text"
-        placeholder="Cerca su Twitter"
-        value={inputValue}
-        onChange={changeInputValue}
-      />
-      <TrendList inputValue={inputValue} />
+      <form onSubmit={onHandleSubmit}>
+        <input
+          className="Trendbar__search"
+          type="text"
+          placeholder="Cerca su Twitter"
+          value={inputValue}
+          onChange={changeInputValue}
+        />
+        <TrendList inputValue={inputValue} />
+      </form>
     </div>
   );
 }

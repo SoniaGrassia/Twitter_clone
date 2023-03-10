@@ -3,7 +3,7 @@ import MessageItem from "../messageItem/MessageItem";
 // import listMessage from "../../mock/listMessage";
 import "./index.css";
 
-const MessageList = () => {
+const MessageList = ({ setIsVisible }) => {
   const [messageData, setMessageData] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,11 @@ const MessageList = () => {
   return (
     <div className="MessageList">
       {messageData.map((message) => (
-        <MessageItem messageData={message} key={message.id} />
+        <MessageItem
+          messageData={message}
+          key={message.id}
+          setIsVisible={setIsVisible}
+        />
       ))}
     </div>
   );
