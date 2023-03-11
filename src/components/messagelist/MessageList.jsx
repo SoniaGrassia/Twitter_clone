@@ -3,7 +3,7 @@ import MessageItem from "../messageItem/MessageItem";
 // import listMessage from "../../mock/listMessage";
 import "./index.css";
 
-const MessageList = ({ setIsVisible }) => {
+const MessageList = ({ setIsVisible, setIdMessage }) => {
   const [messageData, setMessageData] = useState([]);
 
   useEffect(() => {
@@ -20,6 +20,7 @@ const MessageList = ({ setIsVisible }) => {
           messageData={message}
           key={message.id}
           setIsVisible={setIsVisible}
+          setIdMessage={setIdMessage}
         />
       ))}
     </div>

@@ -9,11 +9,14 @@ import "./App.css";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [idMessage, setIdMessage] = useState(null);
   return (
     <div className="App">
-      {isVisible ? <ModalPutMessage setIsVisible={setIsVisible} /> : null}
+      {isVisible ? (
+        <ModalPutMessage setIsVisible={setIsVisible} idMessage={idMessage} />
+      ) : null}
       <Sidebar />
-      <Content setIsVisible={setIsVisible} />
+      <Content setIsVisible={setIsVisible} setIdMessage={setIdMessage} />
       <Trendbar />
       <Footer />
     </div>

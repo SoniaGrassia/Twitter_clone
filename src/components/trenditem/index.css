@@ -1,8 +1,29 @@
 .TrendItem {
+  border-bottom: 1px solid #9ca7ab;
+  padding: 0 0 6px 6px;
+}
+
+.TrendItem__content {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9ca7ab;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.TrendItem__content p {
+  margin: 0;
+  text-align: justify;
+}
+
+.TrendItem__content-image {
+  height: 100%;
 }
 
 .TrendItem img {
-  width: 60px;
-  height: 50px;
+  width: 8vw;
+  height: 100%;
   object-fit: cover;
+  margin-left: 6px;
+  border-radius: 0 5px 5px 0;
 }

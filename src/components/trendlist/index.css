@@ -1,6 +1,10 @@
 .TrendList {
+  border-radius: 10px;
+  background-color: rgba(215, 221, 224, 0.591);
   height: 100vh;
   overflow: auto;
+  width: 90%;
+  margin: 10px 0 0 10px;
 }
 
 .TrendList::-webkit-scrollbar {

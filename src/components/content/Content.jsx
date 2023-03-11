@@ -4,7 +4,7 @@ import MessageList from "../messagelist";
 import ButtonTweet from "../buttontweet/ButtonTweet";
 import "./index.css";
 
-const Content = ({ setIsVisible }) => {
+const Content = ({ setIsVisible, setIdMessage }) => {
   // Esercizio 09-03-2023 - useRef
   // Se la lunghezza dello scroll è maggiore
   // o uguale a 100 il setNavbarHidden modificherà il valore di navbarHidden a true,
@@ -24,7 +24,7 @@ const Content = ({ setIsVisible }) => {
       }
     >
       <Navbar hidden={navbarHidden} />
-      <MessageList setIsVisible={setIsVisible} />
+      <MessageList setIsVisible={setIsVisible} setIdMessage={setIdMessage} />
       <ButtonTweet />
     </div>
   );

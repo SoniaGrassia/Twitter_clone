@@ -5,8 +5,8 @@ import { BiRepost } from "react-icons/bi";
 import { BiHeart } from "react-icons/bi";
 import { BiUpload } from "react-icons/bi";
 
-const MessageItem = ({ messageData, setIsVisible }) => {
-  const { userId, body, reactions } = messageData;
+const MessageItem = ({ messageData, setIsVisible, setIdMessage }) => {
+  const { id, userId, body, reactions } = messageData;
 
   const [userData, setUserData] = useState({});
 
@@ -18,6 +18,8 @@ const MessageItem = ({ messageData, setIsVisible }) => {
 
   const onHandleClick = () => {
     setIsVisible(true);
+    setIdMessage(userData.id);
+    // console.log(userData.id);
   };
 
   return (

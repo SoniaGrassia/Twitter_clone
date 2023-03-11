@@ -24,8 +24,8 @@ function Trendbar() {
           value={inputValue}
           onChange={changeInputValue}
         />
-        <TrendList inputValue={inputValue} />
       </form>
+      <TrendList inputValue={inputValue} />
     </div>
   );
 }

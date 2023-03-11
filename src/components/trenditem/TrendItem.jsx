@@ -5,9 +5,12 @@ const TrendItem = ({ newsData }) => {
   return (
     <div className="TrendItem">
       <p>{category}</p>
-      <p>{title}</p>
-      <img src={image} alt="" />
-      <em>`{tweeting} persone stanno twittando su questo` </em>
+      <div className="TrendItem__content">
+        <p>{title}</p>
+        <img src={image} alt="" />
+      </div>
+
+      <em>{tweeting} persone stanno twittando su questo` </em>
     </div>
   );
 };
